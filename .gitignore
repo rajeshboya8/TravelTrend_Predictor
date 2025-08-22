@@ -121,6 +121,9 @@ staticfiles/
 media/
 *.sqlite3
 
+# Vercel specific
+.vercel
+
 # ML model files (if they're large)
 *.pkl
 *.joblib

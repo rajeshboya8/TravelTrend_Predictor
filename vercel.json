@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "vercel_wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "vercel_wsgi.py"
+    }
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "ttps.production"
+  }
+}
