@@ -1,0 +1,45 @@
+{% extends 'main/header.html' %}
+    {% block title %}How to Use{% endblock %}
+
+    {% block content %}
+		{% load static %}
+        <section class="slide fade-6 kenBurns gradient-bg-warning">
+            <div class="content">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="form-55">
+                            <div class="glass-effect ae-3" style="padding: 30px;">
+                                <h3 style="text-align:center; margin-bottom: 20px; color: #fff;">How to Use TravelTrend Predictor (TTP)</h3>
+                                <ol style="line-height: 1.8; color: var(--color-text-light);">
+                                    <li>Open the homepage and click <b>Get Started</b>.</li>
+                                    <li>Fill the prediction form with:
+                                        <ul>
+                                            <li><b>Year</b>, <b>Duration</b> of stay</li>
+                                            <li><b>Spends ($)</b>, <b>Travel Mode</b>, <b>Purpose</b></li>
+                                            <li><b>Quarter</b> and <b>Market/Country</b></li>
+                                        </ul>
+                                    </li>
+                                    <li>Click <b>Predict Tourists</b> to get the expected number of visitors.</li>
+                                    <li>Use the result to plan resources, pricing, or marketing campaigns.</li>
+                                </ol>
+
+                                <div class="modern-card" style="margin-top: 20px;">
+                                    <h4 style="margin-top: 0; color: var(--color-primary);">History</h4>
+                                    <p style="margin:0; color: var(--color-text-light);">Recent predictions appear after each prediction on the result page.</p>
+                                    <ul style="margin-top:10px; padding-left: 18px; line-height: 1.8; color: var(--color-text-light);">
+                                        <li>Make a prediction to populate the history.</li>
+                                        <li>Refresh the prediction page to view the latest entry.</li>
+                                    </ul>
+                                </div>
+
+                                <div style="text-align:center; margin-top: 20px;">
+                                    <a href="/index2" class="modern-btn" style="text-decoration:none;">Try a Prediction</a>
+                                    <a href="/" class="modern-btn accent" style="text-decoration:none; margin-left: 10px;">Back to Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}

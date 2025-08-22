@@ -1,0 +1,41 @@
+{% extends 'main/header.html' %}
+    {% block title %}TravelTrend Predictor{% endblock %}
+
+    {% block content %}
+{% load static %}
+<!-- Slide 2 (#55) -->
+<section class="slide fade-6 kenBurns gradient-bg-primary">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="form-55">
+          <div class="glass-light ae-3 centered-box" style="padding: 30px;">
+                <h3 class="text-dark" style="text-align: center; margin-bottom: 30px; font-weight: 600;">TravelTrend Prediction Form</h3>
+                <form method="post">
+                        {% csrf_token %}
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            {% for field in form %}
+                            <div style="margin-bottom: 15px;">
+                                <label for="{{ field.id_for_label }}" style="display: block; margin-bottom: 5px; font-weight: 600;" class="text-dark">{{ field.label }}</label>
+                                {{ field }}
+                                {% if field.errors %}
+                                    <div class="error-message">
+                                        {{ field.errors.0 }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div style="text-align: center; margin-top: 30px;">
+                            <input type="submit" class="modern-btn" value="Predict Tourists" style="font-size: 1.1rem; padding: 15px 40px;">
+                        </div>
+                </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+</section>
+{% endblock %}

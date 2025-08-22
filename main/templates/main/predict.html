@@ -1,0 +1,36 @@
+{% extends 'main/header.html' %}
+    {% block title %}Prediction Result{% endblock %}
+
+    {% block content %}
+{% load static %}
+<!-- Slide 2 (#55) -->
+<section class="slide fade-6 kenBurns gradient-bg-success">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="form-55">
+          <div class="prediction-result ae-3">
+            <h3>🎉 Prediction Result</h3>
+            <div style="font-size: 2rem; margin: 20px 0; font-weight: 600;">
+                Expected Tourists: <span style="color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">{{tourist}}</span>
+            </div>
+            <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9;">
+                Based on your input parameters, our AI model predicts this number of tourists.
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="/index2" class="modern-btn" style="text-decoration: none; display: inline-block;">
+                    <i class="material-icons left">arrow_back</i>Make Another Prediction
+                </a>
+                <a href="/" class="modern-btn" style="text-decoration: none; display: inline-block; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <i class="material-icons left">home</i>Back to Home
+                </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>  
+</section>
+{% endblock %}

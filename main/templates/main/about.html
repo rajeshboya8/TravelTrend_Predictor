@@ -1,0 +1,29 @@
+{% extends 'main/header.html' %}
+{% block title %}About{% endblock %}
+    {% block content %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+
+        <div class="animated-bg" style="min-height: 100vh; padding: 40px 0;">
+            <div class="w3-content centered-box" style="max-width:900px">
+                <div class="glass-light" style="padding:28px;">
+                    <h2 class="text-dark" style="margin-top:0; text-align:center;">TravelTrend Predictor (TTP)</h2>
+                    <p class="text-dark" style="line-height:1.8; margin-top:15px;">
+                        TravelTrend Predictor (TTP) is a Django web application that forecasts expected tourist visits using a trained
+                        XGBoost regression model. It considers inputs such as quarter, travel mode, purpose,
+                        year, duration of stay, market segment, and spending to produce accurate predictions
+                        that can support planning, marketing, and operations.
+                    </p>
+                    <p class="text-dark" style="line-height:1.8;">
+                        The app features a simple prediction form, responsive UI with Materialize CSS, and
+                        fast inference from a pre-trained model. It is designed for clarity and ease of use.
+                    </p>
+                    <hr>
+                    <p class="text-dark" style="margin:0; font-weight:600;">Developed by <span style="color:#6C5CE7;">RAJESH BOYA</span></p>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

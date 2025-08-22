@@ -1,0 +1,34 @@
+{% extends 'main/header.html' %}
+    {% block title %}Home{% endblock %}
+
+    {% block content %}
+{% load static %}
+<!-- Slide 1 (#38) -->
+    <section class="slide fade-6 kenBurns animated-bg">
+        <div class="content">
+            <div class="container">
+                <div class="wrap">
+                    <div class="fix-7-12">
+                        <div class="glass-effect" style="padding: 40px; margin: 20px 0;">
+                            <p class="margin-top-1 ae-3">
+                                <span class="opacity-8">
+                                    <h2 class="hero-text" style="color: white; font-size: 3rem; margin-bottom: 20px;">TravelTrend Predictor (TTP)</h2>
+                                    <br>
+                                    <h5 class="hero-subtitle" style="color: white; font-size: 1.3rem; line-height: 1.6;">
+                                        Experience the power of Machine Learning in tourism forecasting.<br>
+                                        Get accurate predictions with 93.5% accuracy using our advanced XGBoost model.
+                                    </h5>
+                                </span>
+                            </p>
+                            <div class="fix-4-12">
+                                <a class="modern-btn ae-10 margin-top-1 cropBottom" href="/index2" style="text-decoration: none; display: inline-block;">
+                                    <b style="font-family: 'Roboto', sans-serif; color: white; font-size: 1.1rem;">Get Started</b>
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
